@@ -1,0 +1,60 @@
+{
+    "extends": [
+        "standard",
+        "prettier",
+        "prettier/standard",
+        "plugin:vue/recommended"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "ecmaFeatures": {
+            "impliedStrict": true,
+            "classes": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "jquery": true
+    },
+    "rules": {
+        "import/first": 0,
+        "wrap-iife": 0,
+        "func-names": 0,
+        "no-param-reassign": 0,
+        "quotes": [
+            2,
+            "single",
+            {
+                "avoidEscape": true,
+                "allowTemplateLiterals": true
+            }
+        ],
+        "arrow-parens": 0,
+        "newline-per-chained-call": [
+            2,
+            {
+                "ignoreChainWithDepth": 3
+            }
+        ],
+        "no-useless-constructor": 0,
+        "prefer-const": 0,
+        "comma-dangle": [2, "only-multiline"],
+        "no-console": 0,
+        "semi": [2, "always"],
+        "max-len": [2, 120],
+        "array-element-newline": 0,
+        "global-require": 0,
+        "no-plusplus": 0,
+        "prettier/prettier": [
+            "error",
+            {
+                "trailingComma": "es5",
+                "singleQuote": true,
+                "printWidth": 80,
+                "tabWidth": 2
+            }
+        ]
+    }
+}
